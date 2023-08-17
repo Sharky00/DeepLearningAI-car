@@ -6,7 +6,7 @@
  const carCtx = carCanvas.getContext("2d");  //ref to canvas context
  const networkCtx = networkCanvas.getContext("2d");  //ref to canvas context
  const road=new Road(carCanvas.width/2,carCanvas.width*0.9); //we make a road in the middle of our canvas or "width/2"
- N = 1;
+ N = 1000;
  const cars=generateCars(N);    //dimension in pixels  (x location, y location, width ,length,key or dummy)
  let bestCar = cars[0];
 
@@ -17,7 +17,7 @@
                 cars[i].brain = JSON.parse(localStorage.getItem("bestBrain"));
                 if(i!=0)
                 {
-                        NeuralNetwork.mutate(cars[i].brain,0.05);
+                        NeuralNetwork.mutate(cars[i].brain,0.1);
                 }
         }
      
