@@ -1,4 +1,4 @@
-# DeepLearningAI-car
+# DeepLearningAI-car No Libraries
 
 This application creates an enviorment for a AI car model that then learns over generations to train a model that learns how to drive itself confidently. This model uses genetic algoritms and
 Neural Networking. This program also uses javascript and html. In order to run this program put all files in a folder and run the .html file.
