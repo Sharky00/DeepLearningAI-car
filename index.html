@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<head>
+    <title>Self-driving car - No Libraries</title>     <!-- line 3 creates the title of the page-->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="carCanvas"></canvas>
+    <div id = "verticalButtons">
+        <button onclick="save()">save<</button>
+        <button onclick="discard()">discard<</button>
+    </div>
+    <canvas id="networkCanvas"></canvas>
+    <script src="network.js"></script>   <!--runs script for our util class-->
+    <script src="visualizer.js"></script>   <!--runs script for our util class-->
+    <script src="sensor.js"></script>   <!--runs script for our util class-->
+    <script src="utils.js"></script>   <!--runs script for our util class-->
+    <script src="road.js"></script>   <!--runs script for our road class-->
+    <script src="car.js"></script>   <!--runs script for our car model-->
+    <script src="controls.js"></script>   <!--runs script for our car controls-->
+    <script src="main.js"></script>
+</body>
+</html>
